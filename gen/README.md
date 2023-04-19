@@ -1,9 +1,9 @@
 
-# PROJECT TEST
-
+# Readme Generator
+![Application License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
-Description
+Generate a Readme file after answers a series of questions.
 
 ## Table of Contents
 
@@ -16,28 +16,28 @@ Description
 
 ## Installation
 
-INSTALL
+Install node.js and the necessary npm packages via 'npm install' within your terminal
 
 ## Usage
 
-USAGE
+Open the integrated terminal and execute 'node index.js'
 
 ## License
 
-None
+MIT
 
 ## Contributors
 
-ME
+EJ Muna
 
 ## Tests
 
-NONE
+None
 
 ## Questions
 
 If you have any questions, please contact me via:
  
-Email: bearmuna@gmail.com
+Email: emailexample@gmail.com
 
 GitHub: https://github.com/bear-muna
