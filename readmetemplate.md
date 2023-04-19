@@ -1,4 +1,6 @@
 # ${data.title}
+![Application License](https://img.shields.io/badge/license-${data.license}-blue)
+
 
 ## Description
 ${data.description}

@@ -56,7 +56,7 @@ const questions = [
     {
         type: 'input',
         message: 'What is an email that users can contact you for any questions?',
-        name: 'questions',
+        name: 'email',
     },
     {
         type: 'input',
@@ -69,20 +69,28 @@ function init() {
     inquirer.prompt(questions)
         .then(data => {
             console.log(data)
+            let licenseBadge = undefined;
+            if (data.license === 'None') {
+                licenseBadge = '';
+            } else {
+                licenseBadge = `![Application License](https://img.shields.io/badge/license-${data.license}-blue)`;  
+            }
+
             const readmeFile = `
 # ${data.title}
+${licenseBadge}
 
 ## Description
 ${data.description}
 
 ## Table of Contents
 
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [License](#License)
-* [Contributors](#Contributors)
-* [Tests](#Tests)
-* [Questions](#Questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributors](#contributors)
+* [Tests](#tests)
+* [Questions](#questions)
 
 ## Installation
 
@@ -106,11 +114,10 @@ ${data.tests}
 
 ## Questions
 
-If you have any questions, please contact me via: 
-email: ${data.email}
-GitHub: ${data.github}
-`
-
+If you have any questions, please contact me via:\n 
+Email: ${data.email}\n
+GitHub: https://github.com/${data.github}
+`;
             fs.writeFile('./gen/README.md', readmeFile, err => {
                 if (err) {
                     throw err;
