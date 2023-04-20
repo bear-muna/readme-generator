@@ -20,3 +20,4 @@ GitHub Repository: https://github.com/bear-muna/readme-generator
 
 
 ## Video Recording of README Generator
+![Video of README Generator example](./screen-record/readme-gen-example.gif)

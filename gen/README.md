@@ -3,7 +3,7 @@
 ![Application License](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
-Generate a Readme file after answers a series of questions.
+Generate a readme file.
 
 ## Table of Contents
 
@@ -16,11 +16,11 @@ Generate a Readme file after answers a series of questions.
 
 ## Installation
 
-Install node.js and the necessary npm packages via 'npm install' within your terminal
+Node.js and 'npm install' 
 
 ## Usage
 
-Open the integrated terminal and execute 'node index.js'
+Open the terminal and execute 'node index.js'
 
 ## License
 
@@ -28,11 +28,11 @@ MIT
 
 ## Contributors
 
-EJ Muna
+Myself
 
 ## Tests
 
-None
+no
 
 ## Questions
 
